@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Daftar Produk</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f9fafb; color:#111827;}
+    header {background:#2563eb; color:white; padding:20px; text-align:center;}
+    h1 {margin:0; font-size:24px;}
+    main {max-width:900px; margin:20px auto; padding:0 16px;}
+    .product-list {display:flex; flex-direction:column; gap:16px;}
+    .product {background:white; border-radius:10px; padding:16px; box-shadow:0 1px 3px rgba(0,0,0,0.1); display:flex; gap:16px; align-items:center;}
+    .thumb {width:100px; height:100px; border-radius:8px; object-fit:cover;}
+    .info {flex:1;}
+    .title {font-size:18px; font-weight:bold; margin-bottom:4px;}
+    .desc {font-size:14px; color:#6b7280; margin-bottom:6px;}
+    .price {font-size:16px; color:#2563eb; font-weight:bold; margin-bottom:8px;}
+    .buy-btn {background:#2563eb; color:white; padding:8px 14px; border-radius:6px; text-decoration:none; font-size:14px; font-weight:bold;}
+    .buy-btn:hover {background:#1d4ed8;}
+    footer {text-align:center; padding:20px; font-size:14px; color:#6b7280;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Daftar Produk</h1>
+    <p>Happy Shopping</p>
+  </header>
+  <main>
+    <div class="product-list">
+      <div class="product">
+        <img src="20250921_104743.jpg" alt="Shampo" class="thumb">
+        <div class="info">
+          <div class="title">Shampo motor dan mobil</div>
+          <div class="desc">Sabun Cuci Motor Mobil Busa 1 Liter Shampo Sampo Pencuci penghitam  motor Kendaraan Car sabun  cuci  motor</div>
+          <div class="price">Rp18.000</div>
+          <a href="https://vt.tokopedia.com/t/ZSHn3cevBXVGa-pMeZw/" target="_blank" class="buy-btn">Beli</a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/100x100/?tshirt,black" alt="Kaos Hitam" class="thumb">
+        <div class="info">
+          <div class="title">Kaos Polos Hitam</div>
+          <div class="desc">Kaos katun premium dengan bahan lebih tebal.</div>
+          <div class="price">Rp80.000</div>
+          <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20beli%20Kaos%20Polos%20Hitam" target="_blank" class="buy-btn">Beli</a>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/100x100/?hoodie,grey" alt="Hoodie Abu" class="thumb">
+        <div class="info">
+          <div class="title">Hoodie Abu-Abu</div>
+          <div class="desc">Hoodie tebal dengan saku depan.</div>
+          <div class="price">Rp185.000</div>
+          <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20beli%20Hoodie%20Abu-Abu" target="_blank" class="buy-btn">Beli</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>© <span id="year"></span>   Kph fi ⚡</footer>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
